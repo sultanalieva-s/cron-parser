@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ## How to run
 
 ```bash
-python3 main.py "your argument"
+python3 parser/main.py "your argument"
 ```
 Argument Format: "cron expression command"  
 Cron Expression Format: minutes hours days_of_month month days_of_week, allowed special characters: *, /, -, , .
