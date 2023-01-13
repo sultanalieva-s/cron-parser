@@ -1,5 +1,5 @@
 # cron-parser
-
+The instructions are applicable to Linux OS.
 ## Environment Setup
 
 ```bash
