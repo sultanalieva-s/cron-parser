@@ -1,8 +1,8 @@
 import sys
 
-from parsers import parse_cron_expression
-from validators import validate_argument
-from formatters import get_formatted_output
+from parser.parsers import parse_cron_expression
+from parser.validators import validate_argument
+from parser.formatters import get_formatted_output
 
 
 def main():
