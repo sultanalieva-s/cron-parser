@@ -1,0 +1,11 @@
+OUTPUT = "minute        {minutes}\nhour          {hours}\nday of month  {days_of_month}\nmonth         {months}\nday of week   {days_of_week}\ncommand       {command}"
+MIN_MINUTE = 0
+MIN_HOUR = 0
+MIN_DAY_OF_MONTH = 1
+MIN_MONTH = 1
+MIN_DAY_OF_WEEK = 1
+MAX_MINUTE = 59
+MAX_HOUR = 23
+MAX_DAY_OF_MONTH = 31
+MAX_MONTH = 12
+MAX_DAY_OF_WEEK = 7
