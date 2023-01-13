@@ -1,6 +1,6 @@
 from typing import Dict, List
 
-from constants import OUTPUT
+from parser.constants import OUTPUT
 
 
 def get_formatted_output(parsed_cron_string: Dict[str, List[str]], command: str) -> str:

@@ -1,6 +1,6 @@
 from typing import List, Dict
 
-from constants import (
+from parser.constants import (
     MIN_MINUTE,
     MIN_HOUR,
     MIN_DAY_OF_WEEK,
