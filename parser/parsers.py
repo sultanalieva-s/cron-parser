@@ -52,6 +52,43 @@ def parse_cron_expression_argument(
     if "," in expression_arg:
         return expression_arg.split(",")
 
+    if '-' in expression_arg:
+        result = []
+        months_string_integers = {
+            'JAN': 1,
+            'FEB': 2,
+            'MAR': 3,
+            'APR': 4,
+            'MAY': 5,
+            'JUN': 6,
+            'JUL': 7,
+            'AUG': 8,
+            'SEP': 9,
+            'OCT': 10,
+            'NOV': 11,
+            'DEC': 12,
+        }
+        exp_split = expression_arg.split('-')
+        arg_1 = exp_split[0]
+        arg_2 = exp_split[1]
+        initial_val = 1
+        end_val = 12
+        if arg_1 in months_string_integers:
+            initial_val = months_string_integers.get(arg_1)
+
+        if arg_2 in months_string_integers:
+            end_val = months_string_integers.get(arg_2)
+
+        if initial_val <= end_val:
+            for month in range(initial_val, end_val+1):
+                result.append(str(month))
+        else:
+            for month in range(initial_val, 13):
+                result.append(str(month))
+            for month in range(1, end_val+1):
+                result.append(str(month))
+        return result
+
     if "-" in expression_arg:
         expression_arg_split = expression_arg.split("-")
         return [
